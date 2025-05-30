@@ -29,7 +29,8 @@ const EbookFinancasLP = () => {
     }, 1500);
   };
 
-  const handleChange = (e) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
@@ -37,7 +38,7 @@ const EbookFinancasLP = () => {
   };
 
   const scrollToForm = () => {
-    document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth' });
+    // document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
